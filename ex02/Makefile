@@ -1,4 +1,4 @@
-NAME = Better
+NAME = NowWeAreTalking
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -pedantic -std=c++98
