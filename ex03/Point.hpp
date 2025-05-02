@@ -6,7 +6,7 @@
 /*   By: moboulan <moboulan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 13:13:29 by moboulan          #+#    #+#             */
-/*   Updated: 2025/04/30 13:57:36 by moboulan         ###   ########.fr       */
+/*   Updated: 2025/04/30 15:08:42 by moboulan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,10 @@ class Point
         Point(const Point &point);
         Point &operator=(const Point &point);
         ~Point();
-        Fixed const getX(void) const;
-        Fixed const getY(void) const;
+        Fixed const &getX(void) const;
+        Fixed const &getY(void) const;
 };
+
+std::ostream &operator<<(std::ostream &str, const Point &point);
 
 #endif
